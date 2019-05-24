@@ -29,6 +29,9 @@ def login(request):
 def index(request):
     article_list = Article.objects.all()
     return render(request, "F:/play/cnblog/templates/index.html", {"article_list": article_list})
+	
+def index(request):
+    return HttpResponse("ok")
 
 
 def logout(request):  # 注销
